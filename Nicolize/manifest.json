@@ -1,0 +1,20 @@
+{
+    "name" : "Nicolize",
+    "description": "Nicolize youtube comments",
+
+    "content_scripts": [{
+        "js": [ "js/jquery-3.3.1.min.js",
+            "js/contents.js"
+        ],
+        "matches": [ "https://www.youtube.com/*" ]
+    }],
+
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2,
+    "permissions": ["tabs"],
+    "version" : "0.0.1"
+}
